@@ -1,1 +1,8 @@
 /* styles go here */
+.formArea {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
