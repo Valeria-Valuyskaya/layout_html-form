@@ -11,11 +11,9 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <script type="text/javascript" src="./main.js"></script>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       onsubmit="onSubmit()"
-      autocomplete="off"
       method="post"
     >
       <fieldset>
@@ -27,6 +25,7 @@
             type="text"
             name="surname"
             id="surname"
+            autocomplete="off"
           >
         </div>
 
@@ -36,6 +35,7 @@
             type="text"
             name="name"
             id="name"
+            autocomplete="off"
           >
         </div>
 
@@ -58,15 +58,15 @@
             name="birth"
             placeholder="mm/dd/yyyy"
             id="birth"
-            >
+          >
         </div>
 
-        <div class="formArea">
-          <label for="accept-term">I accept the term of the agreement</label>
+        <div>
+          <label for="acceptTerm">I accept the term of the agreement</label>
           <input
             type="checkbox"
-            name="accept-term"
-            id="accept-term"
+            name="acceptTerm"
+            id="acceptTerm"
             required
           >
         </div>
@@ -85,7 +85,7 @@
           >
         </div>
 
-        <div class="formArea">
+        <div>
           <label for="password">Password:</label>
           <input
             type="password"
@@ -103,20 +103,20 @@
         <div class="formArea">
           Do you love cats?
 
-          <label for="yes-cats">
+          <label for="yesCats">
             <input
               type="radio"
-              name="yes-cats"
-              id="yes-cats"
+              name="yesCats"
+              id="yesCats"
               value="yes"
             >Yes
           </label>
 
-          <label for="no-cats">
+          <label for="noCats">
             <input
               type="radio"
-              name="no-cats"
-              id="no-cats"
+              name="noCats"
+              id="noCats"
               value="no"
             >No
           </label>
@@ -144,9 +144,9 @@
         <div class="formArea">
           <label for="brand">What are your favorite brand of cars?</label>
           <select
-          name="brand"
-          id="brand"
-          multiple
+            name="brand"
+            id="brand"
+            multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -154,7 +154,7 @@
           </select>
         </div>
 
-        <div class="formArea">
+        <div>
           <label for="rating">How do you rate our work?</label>
           <input
             type="range"
@@ -180,11 +180,11 @@
           </textarea>
         </div>
 
-        <div class="formArea">
+        <div>
           <label for="recommend">Would you recommend us?</label>
           <select
-          name="recommend"
-          id="recommend"
+            name="recommend"
+            id="recommend"
           >
             <option value="yes">yes</option>
             <option value="no">no</option>
@@ -194,5 +194,6 @@
 
       <button type="submit">Submit</button>
     </form>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
