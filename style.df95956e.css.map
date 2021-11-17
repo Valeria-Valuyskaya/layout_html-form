@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,UACE,kBACF,CAEA,SACE,kBACF,CAEA,cACE,eACF","file":"style.df95956e.css","sourceRoot":"..\\src","sourcesContent":["/* styles go here */\n.formArea {\n  margin-bottom: 10px;\n}\n\nfieldset {\n  margin-bottom: 20px;\n}\n\n.formAreaLast {\n  margin-bottom: 0;\n}\n"]}
